@@ -12,8 +12,8 @@
 // A list of polylines to store the lines we draw
 ArrayList<Polyline> polylines;
 
-// A JSONObject to serialize our drawing to JSON
-JSONObject json = new JSONObject();
+// A JSON array to serialize our drawing to JSON
+JSONObject json;
 
 void setup() {
   // Processing setup
@@ -41,6 +41,19 @@ void undo() {
   }
 }
 
+void export() {
+  json = new JSONObject();
+  JSONArray jsonArray = new JSONArray();
+  for(Polyline p : polylines) {
+    JSONObject j = new JSONObject();
+    j.setJSONArray("points", p.toJSONArray());
+    //j.setInt("x",1);
+    jsonArray.append(j);
+  }
+  json.setJSONArray("polylines",jsonArray);
+  saveJSONObject(json, "data/new.json");
+}
+
 boolean isDrawing = false;
 Polyline activePolyline;
 
@@ -58,16 +71,26 @@ void mouseReleased() {
   }
 }
 
+long lastEventTimestamp = 0;
+
 void mouseDragged(){
-  print("x:" + mouseX + "\n\r");
-  if(isDrawing) {
-    activePolyline.addPoint(mouseX, mouseY);
+  long millis = millis();
+  if(lastEventTimestamp < millis) {
+    if(isDrawing) {
+      activePolyline.addPoint(mouseX, mouseY, millis());
+      lastEventTimestamp = millis;
+    }
   }
 }
 
 void mouseClicked() {
  if(mouseButton == RIGHT) {
-   undo();
+     if(mouseX < 150) {
+       export();
+       print("Saved JSON file!\n\r");
+     } else {
+       undo();
+     }
  }
  if(mouseButton == CENTER) {
    cleanup(); 
