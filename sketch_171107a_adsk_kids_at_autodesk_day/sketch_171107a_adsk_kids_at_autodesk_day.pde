@@ -16,8 +16,9 @@ float pointDistance = 4;
 
 void setup() {
   // Processing setup
-  size(800,600);
+  fullScreen(); 
   pixelDensity(displayDensity());
+  //size(800,600);
   // Init drawing
   cleanup();
 }
@@ -99,4 +100,9 @@ void mouseClicked() {
  if(mouseButton == CENTER) {
    cleanup(); 
  }
+}
+
+void keyPressed() {
+  export();
+  print("Saved JSON file!\n\r");
 }
