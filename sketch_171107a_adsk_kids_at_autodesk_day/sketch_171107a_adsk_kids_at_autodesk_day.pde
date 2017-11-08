@@ -51,7 +51,7 @@ void export() {
     jsonArray.append(j);
   }
   json.setJSONArray("polylines",jsonArray);
-  saveJSONObject(json, "data/new.json");
+  saveJSONObject(json, "data/drawing.json");
 }
 
 boolean isDrawing = false;

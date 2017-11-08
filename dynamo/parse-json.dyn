@@ -1,0 +1,510 @@
+{
+  "Uuid": "ae6d6354-2d79-433e-a18c-36a5a5c6ff53",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Home",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonTools.JsonTools.FromJsonFile@string",
+      "Id": "2df44ebfe54a41a9b305a7be3251dd2c",
+      "Inputs": [
+        {
+          "Id": "4a874b836cbe4e06bf570db2eba491e5",
+          "Name": "filepath",
+          "Description": "Filepath of the json file\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "36ddcf00e098460b8d14248bcf2db754",
+          "Name": "object",
+          "Description": "Object returned by the parser.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1b9dbb9187fa4f05965b36a1589ed66b",
+          "Name": "type",
+          "Description": "Type of the returned object.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Reads and parses a json file. It will return JsonObject, JsonArray or other match that the parser can do from the input. Error will be thrown if parser fails.\n\nJsonTools.FromJsonFile (filepath: string): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"c:/users/martinno/files/new.json\";",
+      "Id": "2e8ac168928448a8a8e929392266ba40",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9e9e496d29ca46f38db5cf54a98670a9",
+          "Name": "",
+          "Description": "t6BBA4B28C5E54CF89F300D510499A00E_0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonObject.ValueByKey@string",
+      "Id": "1e95e10c036e4a30b8c13b16232a0841",
+      "Inputs": [
+        {
+          "Id": "b31783105e1c4c069d68af76cac3901f",
+          "Name": "jsonObject",
+          "Description": "JsonElements.JsonObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "266fb21862c642758bfb5765ac90b38b",
+          "Name": "key",
+          "Description": "Attribute's key\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "5ad9a6818bc5424fa92c26ff3b3d90f0",
+          "Name": "value",
+          "Description": "Value returned",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the value associated with the given key from the jsonObject.\n\nJsonObject.ValueByKey (key: string): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonObject.Keys",
+      "Id": "6509c3e262f347d6826f5ac68b2c6d07",
+      "Inputs": [
+        {
+          "Id": "a754335b55a74528b74b07df0b29fc23",
+          "Name": "jsonObject",
+          "Description": "JsonElements.JsonObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "378556f96e9e4ee9908e1ca2d47d7863",
+          "Name": "keys",
+          "Description": "JsonObject Keys",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns keys of attributes in the JsonObject.\n\nJsonObject.Keys: string[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonArray.Elements",
+      "Id": "b50eb575c686446fa526329f19e1c91b",
+      "Inputs": [
+        {
+          "Id": "ff5d86a734334205ae96fd3f6c212899",
+          "Name": "jsonArray",
+          "Description": "JsonElements.JsonArray",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "252a4f3b2d724d888664337c16c9e142",
+          "Name": "elements",
+          "Description": "Elements in JsonArray",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns elements in the JsonArray object.\n\nJsonArray.Elements: var[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonObject.Keys",
+      "Id": "1c3eb3e5fd1f4dd381c1504f915ab938",
+      "Inputs": [
+        {
+          "Id": "ffd76f9b0a81452e8cbef8e5ea4b090b",
+          "Name": "jsonObject",
+          "Description": "JsonElements.JsonObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "90a29cd80b014823bfefb16a0b097dfa",
+          "Name": "keys",
+          "Description": "JsonObject Keys",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns keys of attributes in the JsonObject.\n\nJsonObject.Keys: string[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonObject.ValueByKey@string",
+      "Id": "6edcafe82a9c495c933c8e45c41f0d1f",
+      "Inputs": [
+        {
+          "Id": "a224f759a83047bfaf0d4e50fc3f46d6",
+          "Name": "jsonObject",
+          "Description": "JsonElements.JsonObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c1d201b9fe2742368439f531bb61566b",
+          "Name": "key",
+          "Description": "Attribute's key\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0fe0f062f5b04bc9a2b34b0aa8f21cc3",
+          "Name": "value",
+          "Description": "Value returned",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the value associated with the given key from the jsonObject.\n\nJsonObject.ValueByKey (key: string): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonArray.Elements",
+      "Id": "b54c4e13463a4c128b892f5fcb26074a",
+      "Inputs": [
+        {
+          "Id": "3e6fa14ca4f746f3a35e7795ee2e6e1d",
+          "Name": "jsonArray",
+          "Description": "JsonElements.JsonArray",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2bf2a134d9564b378dfcf90c453e5f2c",
+          "Name": "elements",
+          "Description": "Elements in JsonArray",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns elements in the JsonArray object.\n\nJsonArray.Elements: var[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonObject.Keys",
+      "Id": "15f7aaa7ab734790a6cafd1ba2dd4e05",
+      "Inputs": [
+        {
+          "Id": "62b6005f344840919c7311af480786ce",
+          "Name": "jsonObject",
+          "Description": "JsonElements.JsonObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ba60210842034f25a2f07436324a0d27",
+          "Name": "keys",
+          "Description": "JsonObject Keys",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns keys of attributes in the JsonObject.\n\nJsonObject.Keys: string[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "JsonElements.JsonObject.ValueByKey@string",
+      "Id": "71fd5ed891ef4d58aa05e77f9d9ff765",
+      "Inputs": [
+        {
+          "Id": "5484822a36fb40939bd86e4830d267d6",
+          "Name": "jsonObject",
+          "Description": "JsonElements.JsonObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "674bcc07daf54151802b51291c3383d1",
+          "Name": "key",
+          "Description": "Attribute's key\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2d77025eb2214cc194173ca9f4ed825b",
+          "Name": "value",
+          "Description": "Value returned",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the value associated with the given key from the jsonObject.\n\nJsonObject.ValueByKey (key: string): var[]..[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "36ddcf00e098460b8d14248bcf2db754",
+      "End": "b31783105e1c4c069d68af76cac3901f",
+      "Id": "4f0916c0333f487a957749db81b4162f"
+    },
+    {
+      "Start": "36ddcf00e098460b8d14248bcf2db754",
+      "End": "ffd76f9b0a81452e8cbef8e5ea4b090b",
+      "Id": "cf94272afbe446349479cd9969260a75"
+    },
+    {
+      "Start": "9e9e496d29ca46f38db5cf54a98670a9",
+      "End": "4a874b836cbe4e06bf570db2eba491e5",
+      "Id": "683132cef09f44ad9101e69ac550c220"
+    },
+    {
+      "Start": "5ad9a6818bc5424fa92c26ff3b3d90f0",
+      "End": "ff5d86a734334205ae96fd3f6c212899",
+      "Id": "5f545e6cbd884c19a3e00ba016457b7e"
+    },
+    {
+      "Start": "378556f96e9e4ee9908e1ca2d47d7863",
+      "End": "c1d201b9fe2742368439f531bb61566b",
+      "Id": "1668b0bfde3a4c95969c1a07accb37f4"
+    },
+    {
+      "Start": "252a4f3b2d724d888664337c16c9e142",
+      "End": "a754335b55a74528b74b07df0b29fc23",
+      "Id": "a1a3aefbc5b94edab17cdcd8b31ac685"
+    },
+    {
+      "Start": "252a4f3b2d724d888664337c16c9e142",
+      "End": "a224f759a83047bfaf0d4e50fc3f46d6",
+      "Id": "4fbdd54e7b3a4215a50b85b3d61e7b91"
+    },
+    {
+      "Start": "90a29cd80b014823bfefb16a0b097dfa",
+      "End": "266fb21862c642758bfb5765ac90b38b",
+      "Id": "cfe2bc34209841e798a5389d4d2deff2"
+    },
+    {
+      "Start": "0fe0f062f5b04bc9a2b34b0aa8f21cc3",
+      "End": "3e6fa14ca4f746f3a35e7795ee2e6e1d",
+      "Id": "16308c51506540cc84ba75c0665eb803"
+    },
+    {
+      "Start": "2bf2a134d9564b378dfcf90c453e5f2c",
+      "End": "62b6005f344840919c7311af480786ce",
+      "Id": "38896cd5ec944585b5835de724863446"
+    },
+    {
+      "Start": "2bf2a134d9564b378dfcf90c453e5f2c",
+      "End": "5484822a36fb40939bd86e4830d267d6",
+      "Id": "e06dc15202e74277a532c60d1f1973e1"
+    },
+    {
+      "Start": "ba60210842034f25a2f07436324a0d27",
+      "End": "674bcc07daf54151802b51291c3383d1",
+      "Id": "1405a02583bc4050990d3f88b453dbb2"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.0.2885",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "JsonTools.FromJsonFile",
+        "Id": "2df44ebfe54a41a9b305a7be3251dd2c",
+        "Excluded": false,
+        "X": 104.74200218641772,
+        "Y": 73.305984695076631
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "2e8ac168928448a8a8e929392266ba40",
+        "Excluded": false,
+        "X": 25.757997813582278,
+        "Y": -23.641512571901274
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonObject.ValueByKey",
+        "Id": "1e95e10c036e4a30b8c13b16232a0841",
+        "Excluded": false,
+        "X": 338.3577178500687,
+        "Y": 154.62260320548387
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonObject.Keys",
+        "Id": "6509c3e262f347d6826f5ac68b2c6d07",
+        "Excluded": false,
+        "X": 732.24207369050316,
+        "Y": 149.41657306674955
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonArray.Elements",
+        "Id": "b50eb575c686446fa526329f19e1c91b",
+        "Excluded": false,
+        "X": 490.836987442406,
+        "Y": -5.3875063090818
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonObject.Keys",
+        "Id": "1c3eb3e5fd1f4dd381c1504f915ab938",
+        "Excluded": false,
+        "X": 104.9149073304302,
+        "Y": 213.71250185539918
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonObject.ValueByKey",
+        "Id": "6edcafe82a9c495c933c8e45c41f0d1f",
+        "Excluded": false,
+        "X": 948.676868214077,
+        "Y": -38.6508411772393
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonArray.Elements",
+        "Id": "b54c4e13463a4c128b892f5fcb26074a",
+        "Excluded": false,
+        "X": 1182.3231088687044,
+        "Y": -97.464649746828911
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonObject.Keys",
+        "Id": "15f7aaa7ab734790a6cafd1ba2dd4e05",
+        "Excluded": false,
+        "X": 1262.88971454822,
+        "Y": 121.03337560432453
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "JsonObject.ValueByKey",
+        "Id": "71fd5ed891ef4d58aa05e77f9d9ff765",
+        "Excluded": false,
+        "X": 1549.3558170928088,
+        "Y": -47.58358681047298
+      }
+    ],
+    "Annotations": [],
+    "X": -643.32616499760775,
+    "Y": 188.0602888676334,
+    "Zoom": 0.70024118039566541
+  }
+}
