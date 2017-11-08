@@ -51,7 +51,12 @@ void export() {
     jsonArray.append(j);
   }
   json.setJSONArray("polylines",jsonArray);
-  saveJSONObject(json, "data/drawing.json");
+  
+  
+  String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+hour()+""+minute()+""+second();
+  saveJSONObject(json, "data/"+date+"_drawing.json");
+  saveFrame("data/"+date+"_drawing.jpg");
+  print("Saved JSON file and image!\n\r");
 }
 
 boolean isDrawing = false;
@@ -92,7 +97,6 @@ void mouseClicked() {
  if(mouseButton == RIGHT) {
      if(mouseX < 150) {
        export();
-       print("Saved JSON file!\n\r");
      } else {
        undo();
      }
@@ -103,6 +107,7 @@ void mouseClicked() {
 }
 
 void keyPressed() {
-  export();
-  print("Saved JSON file!\n\r");
+  if(keyCode == 83) {
+    export();
+  }
 }
