@@ -1,19 +1,18 @@
 
-// Nono Martinez Alonso (nono.ma)
-// Jose Luis Garcia del Castillo
-// 171107
-
-// MIT License
-
-// TODO
-// - dougles pecker (simplify polyline)
-// - 
+/* Nono Martinez Alonso (nono.ma)
+ * Jose Luis Garcia del Castillo
+ * 171107
+ * Open-sourced under the MIT License
+ */
 
 // A list of polylines to store the lines we draw
 ArrayList<Polyline> polylines;
 
 // A JSON array to serialize our drawing to JSON
 JSONObject json;
+
+// Distance between points
+float pointDistance = 4;
 
 void setup() {
   // Processing setup
@@ -72,13 +71,18 @@ void mouseReleased() {
 }
 
 long lastEventTimestamp = 0;
+Point lastPoint = null;
 
 void mouseDragged(){
   long millis = millis();
   if(lastEventTimestamp < millis) {
     if(isDrawing) {
-      activePolyline.addPoint(mouseX, mouseY, millis());
-      lastEventTimestamp = millis;
+      Point p = new Point(mouseX, mouseY, millis);
+      if(lastPoint == null || lastPoint.distanceTo(p) > pointDistance) {
+        activePolyline.addPoint(p);
+        lastEventTimestamp = millis;
+        lastPoint = p;
+      }
     }
   }
 }

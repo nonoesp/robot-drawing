@@ -8,6 +8,10 @@ class Polyline {
    points.add(new Point(x,y,t));
  }
  
+ void addPoint(Point p) {
+   points.add(p);
+ }
+ 
  void render() {
    
   noFill();
