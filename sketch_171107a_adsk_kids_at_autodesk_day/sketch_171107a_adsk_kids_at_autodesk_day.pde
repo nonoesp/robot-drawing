@@ -8,6 +8,9 @@
 // A list of polylines to store the lines we draw
 ArrayList<Polyline> polylines;
 
+// A list of UI buttons
+ArrayList<Button> buttons;
+
 // A JSON array to serialize our drawing to JSON
 JSONObject json;
 
@@ -16,9 +19,12 @@ float pointDistance = 4;
 
 void setup() {
   // Processing setup
-  fullScreen(); 
+  size(800,600);
+  //fullScreen(); 
   pixelDensity(displayDensity());
-  //size(800,600);
+  // Add button
+  buttons = new ArrayList<Button>();
+  buttons.add(new Button("test", new Frame(50, 50, 100, 20)));
   // Init drawing
   cleanup();
 }
@@ -26,6 +32,7 @@ void setup() {
 void draw() {
   background(255);
   for(Polyline p : polylines) { p.render(); }
+  for(Button b : buttons) { b.render(); }
 }
 
 // Empty existing polylines
@@ -103,6 +110,13 @@ void mouseClicked() {
  }
  if(mouseButton == CENTER) {
    cleanup(); 
+ }
+ if(mouseButton == LEFT) {
+   for(Button b : buttons) {
+     if(b.isBelowMouse()) {
+       b.click();
+     }
+   }
  }
 }
 
