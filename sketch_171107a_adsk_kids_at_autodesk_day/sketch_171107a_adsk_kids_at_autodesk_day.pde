@@ -40,6 +40,10 @@ void setup() {
   buttons.add(newButton);
   buttons.add(undoButton);
   
+  // Force load fonts?
+  for(Button b : buttons) { b.render(); }
+  background(255);
+  
   // Init drawing
   cleanup();
 }
