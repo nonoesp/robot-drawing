@@ -10,6 +10,11 @@ ArrayList<Polyline> polylines;
 
 // A list of UI buttons
 ArrayList<Button> buttons;
+Button exportButton;
+Button newButton;
+Button undoButton;
+float buttonWidth = 60;
+float buttonHeight = 23;
 
 // A JSON array to serialize our drawing to JSON
 JSONObject json;
@@ -17,14 +22,24 @@ JSONObject json;
 // Distance between points
 float pointDistance = 4;
 
+boolean shouldSaveFrame = false;
+
 void setup() {
   // Processing setup
   size(800,600);
   //fullScreen(); 
   pixelDensity(displayDensity());
-  // Add button
+  // Add UI buttons
   buttons = new ArrayList<Button>();
-  buttons.add(new Button("test", new Frame(50, 50, 100, 20)));
+  
+  exportButton = new Button("Export", new Frame(50, 50, buttonWidth, buttonHeight), "EXPORT");
+  newButton = new Button("New", new Frame(50, 80, buttonWidth, buttonHeight), "NEW");
+  undoButton = new Button("Undo", new Frame(50, 110, buttonWidth, buttonHeight), "UNDO");
+  
+  buttons.add(exportButton);
+  buttons.add(newButton);
+  buttons.add(undoButton);
+  
   // Init drawing
   cleanup();
 }
@@ -32,12 +47,35 @@ void setup() {
 void draw() {
   background(255);
   for(Polyline p : polylines) { p.render(); }
-  for(Button b : buttons) { b.render(); }
+  if(!shouldSaveFrame) {
+    // Render controls (only when we are not exporting the frame)
+    for(Button b : buttons) { b.render(); }
+  } else {
+    // Save a snapshot of the current drawing
+    String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+hour()+""+minute()+""+second();
+    saveFrame("data/"+date+"_drawing.jpg");
+    shouldSaveFrame = false;
+  }
 }
+
+void updateUI() {
+  if(polylines.size() == 0) {
+    exportButton.isEnabled = false;
+    newButton.isEnabled = false;
+    undoButton.isEnabled = false;
+  } else {
+    exportButton.isEnabled = true;
+    newButton.isEnabled = true;
+    undoButton.isEnabled = true;
+  }
+}
+
+// COMMANDS
 
 // Empty existing polylines
 void cleanup() {
   polylines = new ArrayList<Polyline>();
+  updateUI();
 }
 
 // If there are polylines, remove last one
@@ -46,9 +84,11 @@ void undo() {
   if(count > 0) {
     polylines.remove(count-1);
   }
+  updateUI();
 }
 
 void export() {
+  
   json = new JSONObject();
   JSONArray jsonArray = new JSONArray();
   for(Polyline p : polylines) {
@@ -59,10 +99,9 @@ void export() {
   }
   json.setJSONArray("polylines",jsonArray);
   
-  
+  shouldSaveFrame = true;
   String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+hour()+""+minute()+""+second();
   saveJSONObject(json, "data/"+date+"_drawing.json");
-  saveFrame("data/"+date+"_drawing.jpg");
   print("Saved JSON file and image!\n\r");
 }
 
@@ -70,7 +109,15 @@ boolean isDrawing = false;
 Polyline activePolyline;
 
 void mousePressed() {
-  if(mouseButton == LEFT) {
+  
+   isButtonPressed = false;
+   for(Button b : buttons) {
+     if(b.isBelowMouse()) {
+       isButtonPressed = true;
+     }
+   }
+   
+  if(mouseButton == LEFT && !isButtonPressed) {
     isDrawing = true;
     activePolyline = new Polyline();
     polylines.add(activePolyline);
@@ -81,6 +128,7 @@ void mouseReleased() {
   if(mouseButton == LEFT) {  
     isDrawing = false;
   }
+  updateUI();
 }
 
 long lastEventTimestamp = 0;
@@ -100,13 +148,11 @@ void mouseDragged(){
   }
 }
 
+boolean isButtonPressed = false;
+
 void mouseClicked() {
  if(mouseButton == RIGHT) {
-     if(mouseX < 150) {
-       export();
-     } else {
        undo();
-     }
  }
  if(mouseButton == CENTER) {
    cleanup(); 
@@ -114,7 +160,16 @@ void mouseClicked() {
  if(mouseButton == LEFT) {
    for(Button b : buttons) {
      if(b.isBelowMouse()) {
+       
        b.click();
+       
+       if(b.action == "EXPORT") {
+         export();
+       } else if(b.action == "NEW") {
+         cleanup();
+       } else if(b.action == "UNDO") {
+         undo();
+       }
      }
    }
  }

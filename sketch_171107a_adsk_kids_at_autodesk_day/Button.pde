@@ -32,11 +32,13 @@ class Frame {
 class Button {
   
   String label = "Button";
+  String action = "DEFAULT";
   Frame frame;
   color backgroundColor = color(240);
   float borderThickness = 0.5;
   float borderColor = color(180);
   float padding = 5;
+  boolean isEnabled = true;
   
   Button(String label) {
     this.label = label; 
@@ -47,11 +49,22 @@ class Button {
     this.frame = frame;
   }
   
+  Button(String label, Frame frame, String action) {
+    this.label = label;
+    this.frame = frame;
+    this.action = action;
+  }  
+  
   void click() {
-    println("Button '" + label + "' was clicked");  
+    println(label + " button was clicked");  
   }
   
   boolean isBelowMouse() {
+    
+    if(!isEnabled) {
+      return false; 
+    }
+    
     float p = padding;
     Location o = frame.origin;
     Size s = frame.size;
@@ -68,15 +81,32 @@ class Button {
   }
   
   void render() {
-    pushMatrix();
-    fill(backgroundColor);
-    if(isBelowMouse()) {
-      strokeWeight(borderThickness*1.5);
-    } else {
-      strokeWeight(borderThickness);
+    
+    if(isEnabled) {
+      
+      float fontPadding = 2;
+      
+      pushStyle();
+      
+        fill(backgroundColor);
+        
+        if(isBelowMouse()) {
+          strokeWeight(borderThickness*1.5);
+        } else {
+          strokeWeight(borderThickness);
+        }
+        stroke(borderColor);
+        rect(frame.origin.x, frame.origin.y, frame.size.w, frame.size.h);
+      
+        textSize(10);
+        fill(120);
+        
+        textAlign(CENTER, CENTER);
+        text(label, frame.origin.x + frame.size.w * 0.5, frame.origin.y + frame.size.h * 0.5 - fontPadding);
+      
+      popStyle();
+    
     }
-    stroke(borderColor);
-    rect(frame.origin.x, frame.origin.y, frame.size.w, frame.size.h);
-    popMatrix();
+    
   }
 }
