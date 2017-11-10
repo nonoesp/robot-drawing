@@ -1,9 +1,14 @@
-
-/* Nono Martinez Alonso (nono.ma)
- * Jose Luis Garcia del Castillo
- * 171107
+/*****************************************************
+ * An app to draw polylines in a touchscreen and 
+ * export them as a JSON file
+ * 
+ * A project for Kids at Autodesk Day, Nov 7th 2017
+ * 
+ * by Nono Martinez Alonso (nono.ma)
+ * and Jose Luis Garcia del Castillo (garciadelcastillo.es)
+ * 
  * Open-sourced under the MIT License
- */
+ *****************************************************/
 
 // A list of polylines to store the lines we draw
 ArrayList<Polyline> polylines;
@@ -20,14 +25,16 @@ float buttonHeight = 23;
 JSONObject json;
 
 // Distance between points
-float pointDistance = 4;
+float pointDistance = 15;
 
 boolean shouldSaveFrame = false;
 
+boolean isDrawingLocked = false;
+
 void setup() {
   // Processing setup
-  size(800,600);
-  //fullScreen(); 
+  //size(800,600);
+  fullScreen(); 
   pixelDensity(displayDensity());
   // Add UI buttons
   buttons = new ArrayList<Button>();
@@ -56,7 +63,7 @@ void draw() {
     for(Button b : buttons) { b.render(); }
   } else {
     // Save a snapshot of the current drawing
-    String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+hour()+""+minute()+""+second();
+    String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+nf(hour(),2)+""+nf(minute(),2)+""+nf(second(),2);
     saveFrame("data/"+date+"_drawing.jpg");
     shouldSaveFrame = false;
   }
@@ -96,15 +103,19 @@ void export() {
   json = new JSONObject();
   JSONArray jsonArray = new JSONArray();
   for(Polyline p : polylines) {
-    JSONObject j = new JSONObject();
-    j.setJSONArray("points", p.toJSONArray());
-    //j.setInt("x",1);
-    jsonArray.append(j);
+    if(p.points.size() > 0) {
+      JSONObject j = new JSONObject();
+      j.setJSONArray("points", p.toJSONArray());
+      //j.setInt("x",1);
+      jsonArray.append(j);
+    } else {
+      println("skipped a polyline");    
+    }
   }
   json.setJSONArray("polylines",jsonArray);
   
   shouldSaveFrame = true;
-  String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+hour()+""+minute()+""+second();
+  String date = str(year()).substring(2)+""+nf(month(),2)+""+nf(day(),2)+"_"+nf(hour(),2)+""+nf(minute(),2)+""+nf(second(),2);
   saveJSONObject(json, "data/"+date+"_drawing.json");
   print("Saved JSON file and image!\n\r");
 }
@@ -139,6 +150,8 @@ long lastEventTimestamp = 0;
 Point lastPoint = null;
 
 void mouseDragged(){
+  if(!isDrawingLocked) {
+  
   long millis = millis();
   if(lastEventTimestamp < millis) {
     if(isDrawing) {
@@ -149,6 +162,7 @@ void mouseDragged(){
         lastPoint = p;
       }
     }
+  }
   }
 }
 
@@ -183,4 +197,13 @@ void keyPressed() {
   if(keyCode == 83) {
     export();
   }
+    if(keyCode == 85) {
+    undo();
+  }
+   if(keyCode == 76) {
+   isDrawingLocked = !isDrawingLocked;
+  }   if(keyCode == 27) {
+   export();
+  }
+
 }
