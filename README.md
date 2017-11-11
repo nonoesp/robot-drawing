@@ -1,17 +1,14 @@
-<<<<<<< HEAD
-# robot-drawing
-Interactive drawing with Processing, Dynamo, and robots.
-=======
 # Robotic Drawing!
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/banner.jpg)
 
-This repo is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by @nonoesp and @garciadelcastillo. 
+This repo is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by [@nonoesp](http://twitter.com/nonoesp) and [@garciadelcastillo](http://instagram.com/garciadelcastillo). 
 
 A touchscreen allows kids to draw their creations, and a series of scripts convert their designs to robotic instructions.
 
 The project is built with [Processing](https://processing.org/), [Dynamo](http://dynamobim.org/) and [Machina](https://github.com/garciadelcastillo/Machina) for [Dynamo](https://github.com/garciadelcastillo/Machina-Dynamo).
 
 ## Setup
+
 If you want to try this at home (or probably better, your robot-enabled shop), please do the following:
 
 - Install [Processing](https://processing.org/) and [Dynamo Studio](http://dynamobim.org/) in your Windows machine. 
@@ -29,9 +26,7 @@ The installation has been designed and tested for an ABB IRB 120 robot, but idea
 Have fun!
 
 ## Disclaimer
+
 **Robots can be dangerous**. Make sure you are properly trained in the machines you are using, and are following all the adequate security protocols. Also make sure to simulate and test all your offline programs in robot simulation software, and performing "dry runs" before engaging in actual real drawing. 
 
-This project and script are provided as-is, no warranties provided whatsoever. The authors are not responsive nor liable for any unintented consequences, harm or losses to personal or physical property. Use at your own risk.
-
-
->>>>>>> a0be63615dd51239fa418b094b2e1fae09517461
+This project and script are provided as-is, no warranties provided whatsoever. The authors are not responsive nor liable for any unintended consequences, harm or losses to personal or physical property. Use at your own risk.
