@@ -1,5 +1,5 @@
 # Robotic Drawing!
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/banner.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/banner.jpg)
 
 This repository is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
 
@@ -29,9 +29,23 @@ Have fun!
 
 A collage of some of the drawings kids did at the event:
 
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/montage_6x6.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/montage_6x6.jpg)
 
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/montage_3x13.jpg)
+Some photos of the event:
+
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/000.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/010.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/020.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/030.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/040.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/050.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/060.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/070.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/080.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/090.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/100.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/110.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/120.jpg)
 
 
 ## Disclaimer
