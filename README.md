@@ -44,9 +44,11 @@ Some photos of the event:
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/010.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/020.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/030.jpg)
+
 <p align="center">
 <img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-croquetilla-444p-20-fps.gif">
 </p>
+
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/040.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/050.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/060.jpg)
@@ -54,11 +56,14 @@ Some photos of the event:
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/080.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/090.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/100.jpg)
+
 <p align="center">
 <img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-crab-444p-20fps.gif">
 </p>
+
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/120.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/110.jpg)
+
 <p align="center">
 <img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots-444p-20fps.gif">
 </p>
