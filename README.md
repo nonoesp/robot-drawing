@@ -1,7 +1,7 @@
 # Robotic Drawing!
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/banner.jpg)
 
-This repository is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
+This repository is an interactive robotic drawing installation for Kids at Autodesk Day 2017, by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
 
 A touchscreen allows kids to draw their creations, and a series of scripts convert their designs to robotic instructions.
 
