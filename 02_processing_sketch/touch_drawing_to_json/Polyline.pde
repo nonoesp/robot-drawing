@@ -3,6 +3,7 @@
 class Polyline {
   
  ArrayList<Point> points = new ArrayList<Point>();
+ float thickness = 10.5;
  
  void addPoint(float x, float y, long t) {
    points.add(new Point(x,y,t));
@@ -13,17 +14,19 @@ class Polyline {
  }
  
  void render() {
-   
+   pushStyle();
   noFill();
+  strokeWeight(thickness);
   beginShape();
   for(Point p : points) {
     vertex(p.x, p.y);
   }
   endShape();
-  
+  popStyle();
  }
  
  JSONArray toJSONArray() {
+   
    JSONArray jsonPolyline = new JSONArray();
    Point previousPoint = null;
     for(Point p : points) {
