@@ -1,4 +1,4 @@
-<Workspace Version="1.3.0.862" X="-7772.09845651421" Y="689.626616105978" zoom="0.87046766656661" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+<Workspace Version="1.3.0.862" X="227.749499916537" Y="205.4799056423" zoom="0.120389043029282" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap>
     <ClassMap partialName="Plane.XY" resolvedName="Autodesk.DesignScript.Geometry.Plane" assemblyName="ProtoGeometry.dll" />
     <ClassMap partialName="Plane" resolvedName="Autodesk.DesignScript.Geometry.Plane" assemblyName="ProtoGeometry.dll" />
@@ -16,7 +16,7 @@
     <ClassMap partialName="Math" resolvedName="DSCore.Math" assemblyName="DSCoreNodes.dll" />
   </NamespaceResolutionMap>
   <Elements>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7eaf4c8d-f723-4813-9a3d-3e8e1f2d010d" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.AxesTo" x="6595.58474400319" y="-134.89226503999" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.AxesTo@double,double,double,double,double,double">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7eaf4c8d-f723-4813-9a3d-3e8e1f2d010d" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.AxesTo" x="6595.58474400319" y="-134.89226503999" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.AxesTo@double,double,double,double,double,double">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -25,11 +25,11 @@
       <PortInfo index="5" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="70699f1e-26c5-4901-953b-8f355ba11cf4" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="6304.78649739379" y="-94.9960633339607" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="0;&#xA;90;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7c9b3d88-209b-4dec-afcb-8ab9ca301dfa" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.SpeedTo" x="6565.56541018772" y="-230.533348648021" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.SpeedTo@double">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7c9b3d88-209b-4dec-afcb-8ab9ca301dfa" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.SpeedTo" x="6565.56541018772" y="-230.533348648021" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.SpeedTo@double">
       <PortInfo index="0" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2535922c-a924-4a72-be8e-2c2b23c3f9d4" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="6350.90332929261" y="-226.92329986426" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="100;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3fc0538b-5b1f-404a-aaeb-f157b94e08f8" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.AxesTo" x="6582.29794233939" y="378.905397199845" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.AxesTo@double,double,double,double,double,double">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="3fc0538b-5b1f-404a-aaeb-f157b94e08f8" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.AxesTo" x="6582.29794233939" y="378.905397199845" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.AxesTo@double,double,double,double,double,double">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
       <PortInfo index="2" default="True" />
@@ -48,7 +48,7 @@
     </CoreNodeModels.CreateList>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2b19cf0a-e84d-49c0-85b4-a5aa1bf49ca1" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="5468.32614203908" y="-859.452984478635" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;marker&quot;;" ShouldFocus="false" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="7fcd1be0-66c7-4f53-af78-8e4107b29ad1" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Plane.XY" x="5507.2065590639" y="-755.782186128306" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Plane.XY" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="1fa88557-3d38-4448-a66c-1809a19e62d5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Tools.Create" x="5961.26584896265" y="-873.932303162395" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Tools.Create@string,Autodesk.DesignScript.Geometry.Plane,Autodesk.DesignScript.Geometry.Plane,double">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="1fa88557-3d38-4448-a66c-1809a19e62d5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Tools.Create" x="5961.26584896265" y="-873.932303162395" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Tools.Create@string,Autodesk.DesignScript.Geometry.Plane,Autodesk.DesignScript.Geometry.Plane,double">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
@@ -58,18 +58,18 @@
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ac229617-fea0-4d90-9a53-b6596301ff10" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.Attach" x="6567.85534354422" y="-856.049623390427" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.Attach@var">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ac229617-fea0-4d90-9a53-b6596301ff10" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.Attach" x="6567.85534354422" y="-856.049623390427" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.Attach@var">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="7933f916-5901-42e6-b2c3-50dece20a2a0" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="8207.7278497723" y="-276.467583616656" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;Tracer&quot;;&#xA;&quot;ABB&quot;;" ShouldFocus="false" />
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f6392f87-a9a4-4c6c-9837-518bee2156fb" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Robots.Create" x="8419.0454036349" y="-285.067512074306" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Robots.Create@string,string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="f6392f87-a9a4-4c6c-9837-518bee2156fb" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Robots.Create" x="8419.0454036349" y="-285.067512074306" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Robots.Create@string,string">
       <PortInfo index="0" default="True" />
       <PortInfo index="1" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <CoreNodeModels.Input.BoolSelector guid="953fa8a5-c605-4d24-bebe-50eedf0bbbaf" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="8413.40100717483" y="-142.098507501825" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.Boolean>True</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="491cd453-7c8e-47d2-8b36-96de2d896cf2" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Programs.CompileProgram" x="8625.519547197" y="-208.598665510755" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Programs.CompileProgram@var,var[],bool,bool">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="491cd453-7c8e-47d2-8b36-96de2d896cf2" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Programs.CompileProgram" x="8625.519547197" y="-208.598665510755" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Programs.CompileProgram@var,var[],bool,bool">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="True" />
@@ -101,35 +101,35 @@
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="d6b2ab35-822c-4b16-881c-4361764e29fd" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="5780.97568059314" y="-813.071960959521" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="0.5;" ShouldFocus="false" />
     <CoreNodeModels.Input.Filename guid="3bc23c66-94d6-41e2-9ad3-fcf3e1b8323f" type="CoreNodeModels.Input.Filename" nickname="File Path" x="-941.04599802577" y="367.534488263104" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>..\02_processing_sketch\touch_drawing_to_json\data\171110_073423_drawing.json</System.String>
-      <HintPath>D:\Dropbox\171110_kids-at-autodesk-day\robot-drawing\02_processing_sketch\touch_drawing_to_json\data\171110_073423_drawing.json</HintPath>
+      <HintPath>D:\Dropbox\Jose Luis\code\robot-drawing\02_processing_sketch\touch_drawing_to_json\data\171110_073423_drawing.json</HintPath>
     </CoreNodeModels.Input.Filename>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="dd506b64-9f24-498c-8abd-b0bcf4a2daa5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonTools.FromJsonFile" x="-295.575586952679" y="-288.202506398788" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonTools.JsonTools.FromJsonFile@string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="dd506b64-9f24-498c-8abd-b0bcf4a2daa5" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonTools.FromJsonFile" x="-295.575586952679" y="-288.202506398788" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonTools.JsonTools.FromJsonFile@string">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="9aad4d03-5497-49c4-afa5-9ac92b52e088" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.Keys" x="-73.7081456548503" y="-165.229467229837" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.Keys">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="9aad4d03-5497-49c4-afa5-9ac92b52e088" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.Keys" x="-73.7081456548503" y="-165.229467229837" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.Keys">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="eec97451-3aa4-4054-84c6-02176de121ef" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.ValueByKey" x="171.930780295753" y="-294.099342384675" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.ValueByKey@string">
-      <PortInfo index="0" default="False" />
-      <PortInfo index="1" default="False" />
-    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="64c45fe3-2195-4726-969a-5b1b83a725e2" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonArray.Elements" x="454.621681673436" y="-291.300718253358" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonArray.Elements">
-      <PortInfo index="0" default="False" />
-    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="63b6f635-ab14-424f-9ab1-64871470c37e" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.Keys" x="709.410399046664" y="-181.085359168875" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.Keys">
-      <PortInfo index="0" default="False" />
-    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="532d6454-a057-43bb-a113-1cd7dce85d22" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.ValueByKey" x="994.505800698088" y="-293.841115398508" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.ValueByKey@string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="eec97451-3aa4-4054-84c6-02176de121ef" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.ValueByKey" x="171.930780295753" y="-294.099342384675" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.ValueByKey@string">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="4a17e8b3-d88f-4d55-b21d-8e4c8d3edd68" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonArray.Elements" x="1307.54127173954" y="-287.224638969888" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonArray.Elements">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="64c45fe3-2195-4726-969a-5b1b83a725e2" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonArray.Elements" x="454.621681673436" y="-291.300718253358" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonArray.Elements">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="20df076b-dd3d-4c71-af77-8895f3457587" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.Keys" x="1606.27876726799" y="-179.998310570516" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.Keys">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="63b6f635-ab14-424f-9ab1-64871470c37e" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.Keys" x="709.410399046664" y="-181.085359168875" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.Keys">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="caf24d16-8137-4aa7-af6f-a32021c68a14" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.ValueByKey" x="1878.86063375599" y="-289.887205546221" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.ValueByKey@string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="532d6454-a057-43bb-a113-1cd7dce85d22" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.ValueByKey" x="994.505800698088" y="-293.841115398508" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.ValueByKey@string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="4a17e8b3-d88f-4d55-b21d-8e4c8d3edd68" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonArray.Elements" x="1307.54127173954" y="-287.224638969888" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonArray.Elements">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="20df076b-dd3d-4c71-af77-8895f3457587" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.Keys" x="1606.27876726799" y="-179.998310570516" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.Keys">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="caf24d16-8137-4aa7-af6f-a32021c68a14" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="JsonObject.ValueByKey" x="1878.86063375599" y="-289.887205546221" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\MachinaDynamo\package\JsonData\bin\JsonData.dll" function="JsonElements.JsonObject.ValueByKey@string">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
@@ -164,7 +164,7 @@
     <CoreNodeModels.Watch guid="9259e341-cfa8-4386-aee9-fa525b8f2048" type="CoreNodeModels.Watch" nickname="Watch" x="5444.08109803727" y="699.383493255377" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="03b9a3d1-f472-4792-8ac8-2b8d790a8a5c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.SpeedTo" x="6546.94543684487" y="282.722383983215" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\Jose Luis\code\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.SpeedTo@double">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="03b9a3d1-f472-4792-8ac8-2b8d790a8a5c" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Actions.SpeedTo" x="6546.94543684487" y="282.722383983215" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\MachinaDynamo\package\Machina\bin\MachinaDynamo.dll" function="MachinaDynamo.Actions.SpeedTo@double">
       <PortInfo index="0" default="True" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="a2a470a1-7fa3-4ad1-9409-dded5ed50121" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="6332.28335594976" y="291.775581059625" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="100;" ShouldFocus="false" />
@@ -286,7 +286,7 @@
       <Models ModelGuid="491cd453-7c8e-47d2-8b36-96de2d896cf2" />
       <Models ModelGuid="953fa8a5-c605-4d24-bebe-50eedf0bbbaf" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="f7e167d8-0845-4d9f-8186-41ac6ecc8371" annotationText="Export it as a file on your system" left="9067.17276503256" top="-587.623248823296" width="1312.36911530347" height="200.673223814465" fontSize="14" InitialTop="-557.623248823296" InitialHeight="194.32063683215" TextblockHeight="20" backgrouund="#FFFFC999">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="f7e167d8-0845-4d9f-8186-41ac6ecc8371" annotationText="Export it as a file on your system" left="9067.17276503256" top="-587.623248823296" width="1312.36911530344" height="200.673223814465" fontSize="14" InitialTop="-557.623248823296" InitialHeight="194.32063683215" TextblockHeight="20" backgrouund="#FFFFC999">
       <Models ModelGuid="0b69a55c-c62e-48cc-9164-ab6e34c9a09a" />
       <Models ModelGuid="4ea407a3-ae09-42ac-9fc1-0b09ec5725cf" />
       <Models ModelGuid="a88be723-bce7-4bae-9ef9-5a69a0fe0dd4" />

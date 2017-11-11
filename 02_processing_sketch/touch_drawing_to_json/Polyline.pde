@@ -1,7 +1,5 @@
-
-
 class Polyline {
-  
+
  ArrayList<Point> points = new ArrayList<Point>();
  float thickness = 10.5;
  
