@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+MODULE Tracer_Program
+
+  CONST speeddata vel20 := [20,20,5000,1000];
+  CONST speeddata vel100 := [100,100,5000,1000];
+  CONST speeddata vel50 := [50,50,5000,1000];
+  CONST speeddata vel25 := [25,25,5000,1000];
+
+  PERS tooldata marker := [TRUE, [[0,0,100],[1, 0, 0, 0]], [0.5,[0, 0, 50],[1,0,0,0],0,0,0]];
+
+  PROC main()
+    ConfJ \Off;
+    ConfL \Off;
+
+    ! Tool "marker" attached
+    MoveAbsJ [[0,0,0,0,90,0], [0,9E9,9E9,9E9,9E9,9E9]], vel100, z5, marker\WObj:=WObj0;
+    TPWrite "Drawing stroke #0";
+    MoveAbsJ [[0,0,0,0,90,0], [0,9E9,9E9,9E9,9E9,9E9]], vel100, z1, marker\WObj:=WObj0;
+
+  ENDPROC
+
+ENDMODULE
+=======
 MODULE Tracer_Program
 
   CONST speeddata vel20 := [20,20,5000,1000];
@@ -300,3 +323,4 @@ MODULE Tracer_Program
   ENDPROC
 
 ENDMODULE
+>>>>>>> a0be63615dd51239fa418b094b2e1fae09517461

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# robot-drawing
+Interactive drawing with Processing, Dynamo, and robots.
+=======
 # Robotic Drawing!
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/banner.jpg)
 
@@ -30,3 +34,4 @@ Have fun!
 This project and script are provided as-is, no warranties provided whatsoever. The authors are not responsive nor liable for any unintented consequences, harm or losses to personal or physical property. Use at your own risk.
 
 
+>>>>>>> a0be63615dd51239fa418b094b2e1fae09517461
