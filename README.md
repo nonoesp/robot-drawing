@@ -2,12 +2,14 @@
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots.gif)
 
 <p align="center">
-<img width="440" height="250" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots.gif">
+<a href="https://youtu.be/hAxY0jyRVNE"><img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-video-summary-444p-20fps.gif"></a>
 </p>
 
 This repository is an interactive robotic drawing installation for Kids at Autodesk Day 2017, by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
 
 A touchscreen allows kids to draw their creations, and a series of scripts convert their designs to robotic instructions.
+
+
 
 The project is built with [Processing](https://processing.org/), [Dynamo](http://dynamobim.org/) and [Machina](https://github.com/garciadelcastillo/Machina) for [Dynamo](https://github.com/garciadelcastillo/Machina-Dynamo).
 
@@ -48,8 +50,14 @@ Some photos of the event:
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/080.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/090.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/100.jpg)
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/110.jpg)
+<p align="center">
+<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-crab-444p-20fps.gif">
+</p>
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/120.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/110.jpg)
+<p align="center">
+<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots-444p-20fps.gif">
+</p>
 
 
 ## Disclaimer
