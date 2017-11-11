@@ -25,6 +25,15 @@ The installation has been designed and tested for an ABB IRB 120 robot, but idea
 
 Have fun!
 
+## Gallery
+
+A collage of some of the drawings kids did at the event:
+
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/montage_6x6.jpg)
+
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/montage_3x13.jpg)
+
+
 ## Disclaimer
 
 **Robots can be dangerous**. Make sure you are properly trained in the machines you are using, and are following all the adequate security protocols. Also make sure to simulate and test all your offline programs in robot simulation software, and performing "dry runs" before engaging in actual real drawing. 
