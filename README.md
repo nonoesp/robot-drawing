@@ -9,9 +9,7 @@ This repository is an interactive robotic drawing installation for Kids at Autod
 
 A touchscreen allows kids to draw their creations, and a series of scripts convert their designs to robotic instructions.
 
-<p align="center">
-<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-croquetilla-444p-20-fps.gif">
-</p>
+
 
 The project is built with [Processing](https://processing.org/), [Dynamo](http://dynamobim.org/) and [Machina](https://github.com/garciadelcastillo/Machina) for [Dynamo](https://github.com/garciadelcastillo/Machina-Dynamo).
 
@@ -37,7 +35,8 @@ Have fun!
 
 A collage of some of the drawings kids did at the event:
 
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/montage_6x6.jpg)
+<img width="880" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/drawings.gif">
+</p>
 
 Some photos of the event:
 
@@ -45,6 +44,9 @@ Some photos of the event:
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/010.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/020.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/030.jpg)
+<p align="center">
+<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-croquetilla-444p-20-fps.gif">
+</p>
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/040.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/050.jpg)
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/060.jpg)
