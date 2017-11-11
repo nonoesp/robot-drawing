@@ -1,7 +1,7 @@
 # Robotic Drawing!
 ![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/banner.jpg)
 
-This repo is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by [@nonoesp](http://twitter.com/nonoesp) and [@garciadelcastillo](http://instagram.com/garciadelcastillo). 
+This repository is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by [@nonoesp](http://twitter.com/nonoesp) and [@garciadelcastillo](http://instagram.com/garciadelcastillo). 
 
 A touchscreen allows kids to draw their creations, and a series of scripts convert their designs to robotic instructions.
 
@@ -21,7 +21,7 @@ If you want to try this at home (or probably better, your robot-enabled shop), p
 
 - Once the settings are customized, load the `.json` file exported by Processing into the script with the `File Path` loader. If everything goes well, you should see planes representing the planes of your drawing in the 3D view. If that is the case, a `.prg` file will be saved to the dynamo script folder with the offline program that can be loaded in the robot controller and ran to draw the strokes ;)
 
-The installation has been designed and tested for an ABB IRB 120 robot, but ideally, with small changes in the [Machina](https://github.com/garciadelcastillo/Machina) script, it could be used for Kuka, Universal Robots, GCode, etc...
+The installation has been designed and tested for an ABB IRB 120 robot, but ideally, with small changes in the [Machina](https://github.com/garciadelcastillo/Machina) script, it could be used for Kuka, Universal Robots, GCode, etc.
 
 Have fun!
 
