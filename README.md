@@ -1,5 +1,5 @@
 # Robotic Drawing!
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/banner.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots.gif)
 
 This repository is an interactive robotic drawing installation for Kids at Autodesk Day 2017, by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
 
