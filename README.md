@@ -1,9 +1,15 @@
 # Robotic Drawing!
-![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_docs/banner.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots.gif)
 
-This repository is an interactive robotic drawing installation for [Kids at Autodesk Day 2017](https://photos.google.com/share/AF1QipNmiNZb0ONTltFPZ2k-U9t5vJetCAaGuFqNOfMEcbKtAdXJZHJB0w53q9Yt25U1Uw?key=NkREd2hleGI4QXhNdkRRN1FhLVlVdXJSeUdDVlNR), by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
+<p align="center">
+<a href="https://youtu.be/hAxY0jyRVNE"><img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/video-summary-444p-20fps.gif"></a>
+</p>
+
+This repository is an interactive robotic drawing installation for Kids at Autodesk Day 2017, by [@nonoesp](https://github.com/nonoesp) and [@garciadelcastillo](https://github.com/garciadelcastillo). 
 
 A touchscreen allows kids to draw their creations, and a series of scripts convert their designs to robotic instructions.
+
+
 
 The project is built with [Processing](https://processing.org/), [Dynamo](http://dynamobim.org/) and [Machina](https://github.com/garciadelcastillo/Machina) for [Dynamo](https://github.com/garciadelcastillo/Machina-Dynamo).
 
@@ -24,6 +30,44 @@ If you want to try this at home (or probably better, your robot-enabled shop), p
 The installation has been designed and tested for an ABB IRB 120 robot, but ideally, with small changes in the [Machina](https://github.com/garciadelcastillo/Machina) script, it could be used for Kuka, Universal Robots, GCode, etc.
 
 Have fun!
+
+## Gallery
+
+A collage of some of the drawings kids did at the event:
+
+<img width="880" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/drawings.gif">
+</p>
+
+Some photos of the event:
+
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/000.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/010.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/020.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/030.jpg)
+
+<p align="center">
+<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-croquetilla-444p-20-fps.gif">
+</p>
+
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/040.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/050.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/060.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/070.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/080.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/090.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/100.jpg)
+
+<p align="center">
+<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-crab-444p-20fps.gif">
+</p>
+
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/120.jpg)
+![](https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/110.jpg)
+
+<p align="center">
+<img width="880" height="500" src="https://github.com/garciadelcastillo/robot-drawing/blob/master/00_assets/gif-banner-autodesk-robots-444p-20fps.gif">
+</p>
+
 
 ## Disclaimer
 
